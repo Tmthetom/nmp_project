@@ -205,7 +205,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+instance",
+											"text": "+instance: Bank",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -318,7 +318,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": true,
-											"text": "+Instance()",
+											"text": "+Instance(): Bank",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -820,35 +820,6 @@
 									"subViews": [
 										{
 											"_type": "UMLOperationView",
-											"_id": "AAAAAAFgJMic2vVxD9A=",
-											"_parent": {
-												"$ref": "AAAAAAFgJMSLkvE2owg="
-											},
-											"model": {
-												"$ref": "AAAAAAFgJMicr/VrFN4="
-											},
-											"visible": true,
-											"enabled": true,
-											"lineColor": "#000000",
-											"fillColor": "#ffffff",
-											"fontColor": "#000000",
-											"font": "Arial;13;0",
-											"showShadow": true,
-											"containerChangeable": false,
-											"containerExtending": false,
-											"left": 797,
-											"top": 284,
-											"width": 150.66162109375,
-											"height": 13,
-											"autoResize": false,
-											"underline": true,
-											"text": "+Instance()",
-											"horizontalAlignment": 0,
-											"verticalAlignment": 5,
-											"wordWrap": false
-										},
-										{
-											"_type": "UMLOperationView",
 											"_id": "AAAAAAFgJMjQNfWPhD0=",
 											"_parent": {
 												"$ref": "AAAAAAFgJMSLkvE2owg="
@@ -866,7 +837,7 @@
 											"containerChangeable": false,
 											"containerExtending": false,
 											"left": 797,
-											"top": 299,
+											"top": 284,
 											"width": 150.66162109375,
 											"height": 13,
 											"autoResize": false,
@@ -895,7 +866,7 @@
 											"containerChangeable": false,
 											"containerExtending": false,
 											"left": 797,
-											"top": 314,
+											"top": 299,
 											"width": 150.66162109375,
 											"height": 13,
 											"autoResize": false,
@@ -918,7 +889,7 @@
 									"left": 792,
 									"top": 279,
 									"width": 160.66162109375,
-									"height": 53,
+									"height": 38,
 									"autoResize": false
 								},
 								{
@@ -1195,7 +1166,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+instance",
+											"text": "+instance: ClientManager",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -1224,7 +1195,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+Clients: Client",
+											"text": "+Clients: List<Client>",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -1279,7 +1250,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": true,
-											"text": "+Instance()",
+											"text": "+Instance(): ClientManager",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -1661,7 +1632,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+instance",
+											"text": "+instance: TransactionManager",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -1716,7 +1687,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+Instance()",
+											"text": "+Instance(): TransactionManager",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -2584,7 +2555,9 @@
 							"visibility": "public",
 							"isStatic": false,
 							"isLeaf": false,
-							"type": "",
+							"type": {
+								"$ref": "AAAAAAFgJL8K2+xGUSo="
+							},
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
@@ -2641,6 +2614,25 @@
 							"visibility": "public",
 							"isStatic": true,
 							"isLeaf": false,
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFgJ8J/1K2Aenw=",
+									"_parent": {
+										"$ref": "AAAAAAFgJMOzkvBP3gQ="
+									},
+									"visibility": "public",
+									"isStatic": false,
+									"isLeaf": false,
+									"type": {
+										"$ref": "AAAAAAFgJL8K2+xGUSo="
+									},
+									"isReadOnly": false,
+									"isOrdered": false,
+									"isUnique": false,
+									"direction": "return"
+								}
+							],
 							"concurrency": "sequential",
 							"isQuery": false,
 							"isAbstract": false
@@ -3019,20 +3011,6 @@
 					"operations": [
 						{
 							"_type": "UMLOperation",
-							"_id": "AAAAAAFgJMicr/VrFN4=",
-							"_parent": {
-								"$ref": "AAAAAAFgJMSLkPEteRI="
-							},
-							"name": "Instance",
-							"visibility": "public",
-							"isStatic": true,
-							"isLeaf": false,
-							"concurrency": "sequential",
-							"isQuery": false,
-							"isAbstract": false
-						},
-						{
-							"_type": "UMLOperation",
 							"_id": "AAAAAAFgJMjQDPWJYPg=",
 							"_parent": {
 								"$ref": "AAAAAAFgJMSLkPEteRI="
@@ -3181,7 +3159,9 @@
 							"visibility": "public",
 							"isStatic": false,
 							"isLeaf": false,
-							"type": "",
+							"type": {
+								"$ref": "AAAAAAFgJMS/UfF/a+4="
+							},
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
@@ -3199,9 +3179,7 @@
 							"visibility": "public",
 							"isStatic": false,
 							"isLeaf": false,
-							"type": {
-								"$ref": "AAAAAAFgJMSLkPEteRI="
-							},
+							"type": "List<Client>",
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
@@ -3221,6 +3199,25 @@
 							"visibility": "public",
 							"isStatic": true,
 							"isLeaf": false,
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFgJ8LxEq22/bs=",
+									"_parent": {
+										"$ref": "AAAAAAFgJMVw+PJ0vZc="
+									},
+									"visibility": "public",
+									"isStatic": false,
+									"isLeaf": false,
+									"type": {
+										"$ref": "AAAAAAFgJMS/UfF/a+4="
+									},
+									"isReadOnly": false,
+									"isOrdered": false,
+									"isUnique": false,
+									"direction": "return"
+								}
+							],
 							"concurrency": "sequential",
 							"isQuery": false,
 							"isAbstract": false
@@ -3380,7 +3377,9 @@
 							"visibility": "public",
 							"isStatic": false,
 							"isLeaf": false,
-							"type": "",
+							"type": {
+								"$ref": "AAAAAAFgJMTUn/G+Eyw="
+							},
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
@@ -3400,6 +3399,25 @@
 							"visibility": "public",
 							"isStatic": false,
 							"isLeaf": false,
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFgJ8M85q3giSg=",
+									"_parent": {
+										"$ref": "AAAAAAFgJMfWXPR6Uy8="
+									},
+									"visibility": "public",
+									"isStatic": false,
+									"isLeaf": false,
+									"type": {
+										"$ref": "AAAAAAFgJMTUn/G+Eyw="
+									},
+									"isReadOnly": false,
+									"isOrdered": false,
+									"isUnique": false,
+									"direction": "return"
+								}
+							],
 							"concurrency": "sequential",
 							"isQuery": false,
 							"isAbstract": false

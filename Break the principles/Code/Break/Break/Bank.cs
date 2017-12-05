@@ -34,9 +34,9 @@ namespace Break
 
         public void Give(User A, User B, int val)
         {
-            if (A == null) throw new Exception("Sender dont exist");
-            if (B == null) throw new Exception("Receiver dont exist");
-            if (A.Value < val) throw new Exception("Send have not enought money to send specified value");
+            if (A == null) throw new Exception("Sender does not exist");
+            if (B == null) throw new Exception("Receiver does not exist");
+            if (A.Value < val) throw new Exception("Sender does not have enought money to send specified value");
 
             A.NewVal(A.Value - val);
             B.NewVal(B.Value + val);
