@@ -204,8 +204,8 @@
 											"width": 321.876953125,
 											"height": 13,
 											"autoResize": false,
-											"underline": false,
-											"text": "+instance: Bank",
+											"underline": true,
+											"text": "+instance: Bank {readOnly}",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -234,7 +234,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+clientManager: ClientManager",
+											"text": "-clientManager: ClientManager",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -263,7 +263,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+transactionsManager: TransactionsManager",
+											"text": "-transactionsManager: TransactionsManager",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -758,7 +758,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+Name: String",
+											"text": "-Name: String",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -787,7 +787,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+Balance: Int",
+											"text": "-Balance: Int",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -1165,8 +1165,8 @@
 											"width": 220.22705078125,
 											"height": 13,
 											"autoResize": false,
-											"underline": false,
-											"text": "+instance: ClientManager",
+											"underline": true,
+											"text": "+instance: ClientManager {readOnly}",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -1195,7 +1195,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+Clients: List<Client>",
+											"text": "-Clients: List<Client>",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -1631,8 +1631,8 @@
 											"width": 327.798828125,
 											"height": 13,
 											"autoResize": false,
-											"underline": false,
-											"text": "+instance: TransactionManager",
+											"underline": true,
+											"text": "+instance: TransactionManager {readOnly}",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -2553,12 +2553,12 @@
 							},
 							"name": "instance",
 							"visibility": "public",
-							"isStatic": false,
+							"isStatic": true,
 							"isLeaf": false,
 							"type": {
 								"$ref": "AAAAAAFgJL8K2+xGUSo="
 							},
-							"isReadOnly": false,
+							"isReadOnly": true,
 							"isOrdered": false,
 							"isUnique": false,
 							"isDerived": false,
@@ -2573,7 +2573,7 @@
 							},
 							"name": "clientManager",
 							"stereotype": "",
-							"visibility": "public",
+							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
 							"type": "ClientManager",
@@ -2591,7 +2591,7 @@
 								"$ref": "AAAAAAFgJL8K2+xGUSo="
 							},
 							"name": "transactionsManager",
-							"visibility": "public",
+							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
 							"type": "TransactionsManager",
@@ -2978,7 +2978,7 @@
 								"$ref": "AAAAAAFgJMSLkPEteRI="
 							},
 							"name": "Name",
-							"visibility": "public",
+							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
 							"type": "String",
@@ -2996,7 +2996,7 @@
 								"$ref": "AAAAAAFgJMSLkPEteRI="
 							},
 							"name": "Balance",
-							"visibility": "public",
+							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
 							"type": "Int",
@@ -3157,12 +3157,12 @@
 							},
 							"name": "instance",
 							"visibility": "public",
-							"isStatic": false,
+							"isStatic": true,
 							"isLeaf": false,
 							"type": {
 								"$ref": "AAAAAAFgJMS/UfF/a+4="
 							},
-							"isReadOnly": false,
+							"isReadOnly": true,
 							"isOrdered": false,
 							"isUnique": false,
 							"isDerived": false,
@@ -3176,7 +3176,7 @@
 								"$ref": "AAAAAAFgJMS/UfF/a+4="
 							},
 							"name": "Clients",
-							"visibility": "public",
+							"visibility": "private",
 							"isStatic": false,
 							"isLeaf": false,
 							"type": "List<Client>",
@@ -3375,12 +3375,12 @@
 							},
 							"name": "instance",
 							"visibility": "public",
-							"isStatic": false,
+							"isStatic": true,
 							"isLeaf": false,
 							"type": {
 								"$ref": "AAAAAAFgJMTUn/G+Eyw="
 							},
-							"isReadOnly": false,
+							"isReadOnly": true,
 							"isOrdered": false,
 							"isUnique": false,
 							"isDerived": false,
