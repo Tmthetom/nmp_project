@@ -59,7 +59,7 @@ namespace Break
         private static void ShowClients()
         {
             Console.WriteLine();
-            List<User> clients = bank.Clients();
+            List<User> clients = bank.Users();
             foreach (User client in clients)
             {
                 Console.WriteLine("[" + clients.IndexOf(client) + "] " + client.Text + ":\t" + client.Value + " Kč");
@@ -80,13 +80,13 @@ namespace Break
                 ShowClients();
                 Console.Write("FROM: ");
                 index = Convert.ToInt32(Console.ReadLine());
-                from = bank.Clients()[index];
+                from = bank.Users()[index];
 
                 Console.WriteLine("\nPlease select TO (receiver):");
                 ShowClients();
                 Console.Write("TO: ");
                 index = Convert.ToInt32(Console.ReadLine());
-                to = bank.Clients()[index];
+                to = bank.Users()[index];
 
                 Console.WriteLine("\nPlease select value to be sender from " + from.Text + ", to " + to.Text);
                 Console.Write("Value = ");

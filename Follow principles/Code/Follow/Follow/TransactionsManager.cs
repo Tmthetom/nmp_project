@@ -9,6 +9,18 @@ namespace Follow
     class TransactionsManager
     {
         /// <summary>
+        /// Singleton
+        /// </summary>
+        static readonly TransactionsManager instance = new TransactionsManager();
+        public static TransactionsManager Instance
+        {
+            get
+            {
+                return instance;
+            }
+        }
+
+        /// <summary>
         /// Create transaction manager
         /// </summary>
         public TransactionsManager()

@@ -15,21 +15,21 @@ namespace Break
             List = new List<User>();
         }
 
-        public void New(string name)
+        public void New(string text)
         {
-            User client = new User(name);
+            User client = new User(text);
             List.Add(client);
         }
 
-        public void New(string name, int balance)
+        public void New(string text, int value)
         {
-            User client = new User(name, balance);
+            User client = new User(text, value);
             List.Add(client);
         }
 
-        public void Del(User client)
+        public void Del(User user)
         {
-            List.Remove(client);
+            List.Remove(user);
         }
 
         public void Give(User A, User B, int val)
@@ -42,7 +42,7 @@ namespace Break
             B.NewVal(B.Value + val);
         }
 
-        public List<User> Clients()
+        public List<User> Users()
         {
             return List;
         }
