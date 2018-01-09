@@ -23,7 +23,7 @@ namespace Follow
         /// <summary>
         /// Create transaction manager
         /// </summary>
-        public TransactionsManager()
+        private TransactionsManager()
         {
 
         }

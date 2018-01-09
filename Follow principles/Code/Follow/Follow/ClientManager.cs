@@ -28,7 +28,7 @@ namespace Follow
         /// <summary>
         /// Create one and only client manager
         /// </summary>
-        public ClientManager()
+        private ClientManager()
         {
             Clients = new List<Client>();
         }

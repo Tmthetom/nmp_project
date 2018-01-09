@@ -29,7 +29,7 @@ namespace Follow
         /// <summary>
         /// Create one and only bank
         /// </summary>
-        public Bank()
+        private Bank()
         {
             clientManager = new ClientManager();
             transactionsManager = new TransactionsManager();
